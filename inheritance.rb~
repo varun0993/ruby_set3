@@ -1,0 +1,35 @@
+class Country
+    def initialize
+        puts "This is the Country code."
+    end   
+     def countryCode
+     puts "country code -> 00"
+     @countrycode = 00
+    end
+endclass City < Country
+    def initialize
+        puts "This is the City code."
+    end
+    def cityCode
+        puts "City code -> 212"        
+        @citycode = 212
+    end
+    # define cityCode  --> city code is 212
+endclass Number < City
+    def initialize
+        puts "This is the landline number."
+    end
+    def phoneNumber
+        puts "phone number -> 2414211"
+        @phno = 2414211    end
+endclass LandNumber < Number
+    def initialize
+        countryCode
+        cityCode
+        phoneNumber
+        puts "This is the landline number."
+    end    def phonenumber
+    print "#{@countrycode} #{@citycode} #{@phno}"
+    end
+endph=LandNumber.new
+ph.phonenumber

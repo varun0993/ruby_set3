@@ -12,12 +12,12 @@ class Company
 
 end
 
-@Company = {
-  2=>"qwinix": ,
-    1=>"infosys",
-  3=>"pivotal"
+company = {
+  1=>"qwinix" ,
+    2=>"infosys",
+  3=>"pivotal",
 }
 num=gets.to_i
-puts "@company#{num}"
-company_name = 'Input From the user'
-location = Company.new(company_name)
+puts "#{company[num]}"
+# company_name = 'Input From the user'
+# location = Company.new(company_name)
